@@ -1,0 +1,481 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+  background-color: #202120;
+}
+
+p {
+  font-family: 'Futura PT', 'Avenir Next', sans-serif;
+  font-size: 14pt;
+  color: white;
+}
+
+h4 {
+  font-family: 'Futura', 'Avenir Next', sans-serif;
+  font-size: 20pt;
+  color: white;
+}
+
+h5 {
+  font-family: 'Futura', 'Avenir Next', sans-serif;
+  font-size: 12pt;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-bar, .rave {
+  font-family: 'Futura', 'Avenir Next', sans-serif;
+  font-size: 16pt;
+  color: #ffffff;
+  text-align: center;
+}
+
+.nav-bar li a:hover {
+  color: #1397B8;
+  cursor: pointer;
+  border-bottom:  solid #1397B8;
+  padding: 5px 0;
+}
+
+.nav-bar li:hover{
+  border: none;
+}
+
+ul.rave {
+  padding-left: 0;
+  margin-top: 0;
+}
+
+
+/*Navigation*/
+.nav-bar li{
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 7%;
+  border-bottom: 3px solid white;
+  border-radius: 1px;
+  padding-bottom: 3px;
+}
+
+.nav-bar ul{
+  position: fixed;
+  bottom: 20px;
+  width: 100%;
+  display: block;
+  z-index: 3000;
+  margin: auto;
+  padding-left: 0;
+}
+
+@media (max-width:631px){
+  .nav-bar li{
+    margin:1%;
+  }
+}
+
+/*HERO*/
+
+.hero {
+  background: #202120 url('../images/action.jpg') center no-repeat fixed;
+  background-size: cover;
+  height: 100%;
+  z-index: -1;
+}
+
+@media screen and (max-device-width: 1024px){
+  .hero {
+    background: #202120 url('../images/action.jpg') center no-repeat scroll;
+    background-size: cover;
+    height: initial;
+  }
+  .hero img {
+    padding-bottom: 15%;
+  }
+}
+
+.hero p {
+  display: inline;
+  margin: 15px;
+}
+
+.hero img {
+  margin: auto;
+  display: block;
+  top: 20%/*180px*/;
+  position: relative;
+  width: 80%;
+}
+
+.rave li {
+  text-decoration: none;
+  display: inline-block;
+  margin: 35px 20px -5px;
+  padding-bottom: 3px;
+}
+
+.rave ul {
+  bottom: 50px;
+  left: 50%;
+  right: 50%;
+  display: block;
+}
+
+/*SYNOPSIS*/
+.synopsis {
+  clear: both;
+  overflow: auto;
+  position: relative;
+}
+
+.synopsis.text {
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+
+.text{
+   width: 25%;
+   display: inline-block;
+   position: relative;
+}
+
+.synopsis h4{
+  text-align: left;
+  margin-bottom: 30%;
+  margin-top: 20%;
+  border-bottom: #1397B8 1.5px solid;
+  width: 160%;
+}
+
+.synopsis img {
+  margin: 5%;
+  width: 50%;
+  float: left;
+/*  z-index: 2000;*/
+}
+
+.blue-box {
+  width: 90%;
+  background-color: #1397B8;
+  mix-blend-mode: overlay;
+  position: absolute;
+  right: 0px;
+}
+
+.blue-box {
+  z-index: 2000;
+}
+
+#blu1 {
+  height: 50%;
+  top:23%;
+  position: absolute;
+}
+
+@media (max-width:947px){
+  .synopsis p{
+    width: 133%;
+  }
+}
+
+/*Trailer*/
+.trailer {
+  background: #202120 url('../images/woman-concert.jpeg') no-repeat ;
+  background-size: cover;
+  /*height: 85%;*/
+}
+
+.trailer img {
+  margin: auto;
+  display: block;
+  padding-top: 23%;
+  padding-bottom: 23%;
+}
+
+
+/*CAST*/
+.cast {
+  width: 100%;
+  display: block;
+  text-align: center;
+  position: relative;
+  clear: both;
+  margin: 55px 0;
+}
+
+.cast h4{
+  border-bottom: #1397B8 1.5px solid;
+  padding-bottom: 6px;
+  width: 20%;
+  text-align: right;
+}
+
+.actor {
+  display: inline-block;
+  margin: 30px 15px;
+  text-align: center;
+  position: relative;
+}
+
+.top-row, .bottom-row {
+  text-align: center;
+  position: relative;
+  margin:auto;
+ }
+
+p.role{
+  font-size: 12pt;
+  font-style: italic;
+  text-align: center;
+  margin-top: -15px;
+}
+
+.cast .blue-box{
+  height: 160px;
+  margin: auto;
+  top: 255px;
+  left: 0;
+  z-index: 1000;
+}
+
+.cast .blac-box{
+  background-color: #202120;
+  height: 170px;
+  margin: auto;
+  left: 0;
+}
+
+#blu3 {
+  top: 255px;
+}
+#blu2{
+  top: 625px;
+}
+#blu4{
+  top:1000px;
+}
+#blu5{
+  top: 1370px;
+}
+#blu6{
+  top: 1740px;
+}
+#blu7{
+  top: 2115px;
+}
+#blu8{
+  top: 2480px;
+}
+
+/*REVIEWS*/
+.contain-reviews{
+  margin: auto;
+  display: inline-block;
+  width: 85%;
+  text-align: left;
+}
+
+.column-1, .column-2{
+  float: left;
+  width: 20%;
+  margin: 5px 4%;
+}
+
+.column-3{
+  float: left;
+  width: 33%;
+  margin: 5px 30px;
+  margin-right: 60px;
+}
+
+span {
+  font-size: 20pt;
+  color: #1397B8;
+}
+
+div.review {
+  margin-bottom: 20%;
+}
+
+.reviews {
+  background: #202120 url('../images/empty.png') center no-repeat fixed;
+  background-size: cover;
+  max-height: 100%;
+  display: inline-block;
+  padding: 10% 5px;
+  text-align: center;
+}
+
+@media screen and (max-device-width: 1024px){
+  .reviews {
+    background: #202120 url('../images/empty.png') center no-repeat scroll;
+    padding: 0;
+}
+}
+
+.reviews h5 {
+  margin-bottom: 0;
+}
+
+.reviews h4{
+  text-align: left;
+  border-bottom: #1397B8 1.5px solid;
+  width: 131%;
+  margin-top: 0;
+  margin-left: 20%;
+}
+
+.column-3 h5 {
+  margin-bottom: 0;
+  margin-left: 20%;
+}
+
+/*FOOTER*/
+.footer{
+padding-bottom: 100px;
+margin-top: 30px;
+text-align: center;
+}
+
+.footer p{
+  display: inline;
+  margin: 10px;
+}
+
+.search-bar, .button{
+  border: 3px solid #1397B8;
+  border-radius: 25px;
+  padding: 5px 20px;
+  width: 20%;
+  color: #1397B8;
+  font-family: 'Futura';
+  margin: 5px;
+  display: inline;
+  bottom: 25px;
+}
+
+.button{
+  background: #1397B8;
+  border: 3px solid #1397B8;
+  color: #202120;
+  width: 10%;
+  text-align: center;
+}
+
+.button:hover{
+  background: white;
+  border: 3px solid white;
+}
+
+@media (max-width:546px){
+  .footer p{
+    display: block;
+  }
+  .search-bar, .button{
+    margin: 0;
+  }
+}
+
+/*MEdia queries*/
+@media (max-width:723px){
+  .text{
+    display: block;
+    width: 90%;
+    margin: auto;
+  }
+  .synopsis p{
+    width: 100%;
+  }
+  .synopsis h4{
+    width: 65%;
+    margin: 35px 0;
+    margin-left: 40%;
+  }
+  .reviews h4 {
+    width: 81%;
+}
+  .synopsis img{
+    float: none;
+    margin: 0;
+    width: 100%;
+  }
+  #blu1{
+    width: 100vh;
+    height: 40%;
+  }
+}
+
+@media (min-width:1333px) {
+  .column-3{
+    width: 36%;
+  }
+  .reviews h4{
+    width: 121%;
+  }
+}
+
+@media (min-width: 724px) and (max-width:1180px){
+  .synopsis h4{
+    margin-bottom: 10%;
+    width: 133%;
+  }
+  .text{
+    width: 30%;
+  }
+  .column-3{
+    width: 33%;
+  }
+}
+
+@media (min-width: 724px) and (max-width: 965px) {
+  .reviews h4{
+    width: 85%;
+  }
+}
+
+@media (max-width: 965px) {
+  .column-3{
+    width: 100%;
+  }
+  .column-1, .column-2 {
+    float: left;
+    width: 44%;
+    margin: 3%;
+}
+  div.review{
+    margin-bottom: 0;
+  }
+
+}
+
+@media (min-width:1012px){
+  #blu4{
+    display: none;
+  }
+}
+@media (min-width:758px){
+   #blu5{
+    display: none;
+  }
+}
+@media (min-width:504px){
+    #blu6, #blu7, #blu8{
+    display: none;
+  }
+}
+@media (min-width: 724px)and(max-width:854px) {
+  #blu1{
+    /*height: 50%;
+    top: 25%;*/
+    left: 0;
+    width: 58%;
+  }
+
+}
